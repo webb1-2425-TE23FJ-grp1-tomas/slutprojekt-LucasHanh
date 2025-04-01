@@ -1,0 +1,33 @@
+@media screen and (min-width: 300px) {    
+
+.body{
+    background-color: grey;
+}
+.container{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content;
+    justify-self: center;
+}
+.animalboxes{
+    font-size:x-large;
+    display:flex;
+    background-color: gainsboro;
+    height:300px;
+    padding:10px;
+    margin:5px;
+    align-items: center;
+    flex-direction: column;
+}
+.animalboxes img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+#bombardino-cocodrilo{
+    display: flex;
+
+}
+
+}
