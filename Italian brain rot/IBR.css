@@ -105,5 +105,82 @@ body{
     
 }
     
+.modal {
+    display: none; /* Initially hide the modal */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal.is-open {
+    display: flex;  /* Show the modal when it's open */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  .modal__container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 80%;  /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .modal__header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 1em;
+  }
+   .modal__title{
+     margin-right: 2em;
+     font-size: 1.5em;
+  }
+  .modal__close{
+     background-color: transparent;
+     border: none;
+     font-size: 1.5em;
+     cursor: pointer;
+  }
+  
+  .modal__content {
+    /* Style your image and vitruta here */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   .modal__footer{
+     margin-top: 1em;
+     display: flex;
+     justify-content: flex-end;
+  
+  }
+  .modal__btn{
+     padding: .5em 1em;
+     border-radius: 5px;
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     cursor: pointer;
+  }
+  
+  .modal__btn-primary {
+    /* Style your primary button */
+  }
+  
     }
     
