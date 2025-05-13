@@ -220,6 +220,8 @@ body{
         max-width: 100%;
         align-items: center;
         box-shadow: 5px 5px lightgray;
+        width:fit-content;
+        justify-content: center;
     }
     
     .animalboxes h2 {

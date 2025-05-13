@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+background-color:lightgrey;
+}
+.grid-container{
+    width: fit-content;
+background-color:white;
+padding:10px;
+display:grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: repeat(4,1fr);
+}
+.box{
+    background-image: url(bilder/italienflagga.png);
+    background-size: cover;
+background-color:lavenderblush;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: double;
+}
+#box1{
+grid-column: 1/2;
+grid-row:1/2;
+}
+#box2{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+#box3{
+    grid-column: 1/2;
+    grid-row:3/4;
+}
+#bild1{
+    grid-column:2/3;
+    grid-row:1/4;
+    max-width: 400px;
+    width:max-content;
+}
