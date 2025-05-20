@@ -1,100 +1,149 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    background-color:lightgrey;
+
+body {
+    background-color: lightgrey;
     font-family: sans-serif;
     margin: 0;
     padding: 20px;
 }
-.container{
+
+.container {
     background-color: white;
     border: 1px dotted #ccc;
     padding: 20px;
-    margin: 20px auto; 
-    max-width: 960px; 
+    /* margin: 20px auto; */
 }
-.title{
+
+.title {
     background-image: url(bilder/italian-brainrot.jpeg);
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    color:black;
+    color: black;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
     min-height: 200px;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
 }
-.morkruta{
-    background: rgba(255,255,255,0.6);
-    padding: 20px; 
+
+.morkruta {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
 }
-.grid-container{
+
+.grid-container {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    border-color:yellow;
-    border-style: dotted;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    /* border-color: yellow;
+    border-style: dotted; */
 }
 .grid-container2{
-    background-color:white;
-    padding:20px; 
-    display:grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: auto auto auto; */
-    gap: 20px; 
-    border-style: dotted;
-    border-color: blue;
-    grid-column: 1/2;
-
+    height:100%;
 }
-.box{
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333; /* Mörkgrå bakgrund */
+    color: white;
+    margin-bottom: 20px; /* Lite utrymme under navbaren */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtil skugga */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none; /* Tar bort punktlistan */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2rem; /* Mellanrum mellan länkarna */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Tar bort understrykning */
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smidig övergång vid hover */
+    border-radius: 5px; /* Lätt rundade hörn för länkarna */
+}
+
+.nav-links a:hover {
+    background-color: #555; /* Bakgrundsfärg vid hover */
+    color: #ffd700; /* Guldgul färg vid hover */
+}
+.tiktok {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    max-width: 605px;
+    justify-self: center;
+    align-self: start;
+}
+#here{
+    font-weight: bold;
+}
+.box {
     background-image: url(bilder/italienflagga.png);
     background-size: cover;
     background-position: center;
-    background-color:lavenderblush;
+    background-color: lavenderblush;
     margin: 0;
     padding: 15px;
     border-radius: 10px;
     border: 2px double #aaa;
 }
-.tiktok{
-    width:min-content;
-    grid-column: 2/3;
-}
-/* #grid2{
-    grid-column:1/2;
-} */
-#box1{
+
+#box1 {
     grid-column: 1/2;
-    grid-row:1/2;
-}
-#box2{
-    grid-column: 1/2;
-    grid-row:2/3;
-}
-#box3{
-    grid-column: 1/2;
-    grid-row:3/4;
-}
-#bilden{
-    grid-column:2/3;
-    grid-row:1/4;
-    max-width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    grid-row: 1/2;
 }
 
-h1, h2, h3 {
+#box2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#box3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+h1,
+h2,
+h3 {
     margin-top: 0;
     color: #333;
 }
+
 ul {
     padding-left: 20px;
+}
+@media screen and (min-width: 500px) {
+.container{
+
+}
+.grid-container{
+    display: flex;
+    
+}
 }
