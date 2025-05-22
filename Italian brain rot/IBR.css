@@ -25,9 +25,9 @@ h3 {
 
 .navbar {
     display: flex;
-    flex-direction: column; /* Stapla logo och nav-länkar vertikalt som standard */
-    align-items: center; /* Centrera horisontellt */
-    padding: 0.8rem 0.5rem; /* Mindre padding på navbar för små skärmar, även horisontellt */
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem 0.5rem;
     background-color: #333;
     color: white;
     margin-bottom: 20px;
@@ -35,37 +35,37 @@ h3 {
 }
 
 .logo {
-    font-size: 1.5rem; /* Ännu mindre logga för de minsta skärmarna */
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    margin-bottom: 0.5rem; /* Lite utrymme under loggan när länkar staplas */
+    margin-bottom: 0.5rem;
 }
 
 .nav-links {
     display: flex;
-    flex-direction: column; /* Stapla länkarna vertikalt */
+    flex-direction: column;
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%; /* Låt länkarna ta upp hela bredden */
-    align-items: center; /* Centrera individuella länkar */
+    width: 100%;
+    align-items: center;
 }
 
 .nav-links li {
-    margin: 0.3rem 0; /* Vertikalt mellanrum mellan staplade länkar */
-    width: 100%; /* Länkelementet tar upp hela bredden */
-    text-align: center; /* Centrera texten i länken */
+    margin: 0.3rem 0;
+    width: 100%;
+    text-align: center;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding: 0.3rem 0.5rem; /* Mindre padding för nav-länkar */
+    padding: 0.3rem 0.5rem;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 5px;
-    display: block; /* Gör länken till ett block för att fylla li-elementet */
-    font-size: 0.9em; /* Mindre fontstorlek för nav-länkar på minsta skärmen */
+    display: block;
+    font-size: 0.9em;
 }
 
 .nav-links a:hover {
