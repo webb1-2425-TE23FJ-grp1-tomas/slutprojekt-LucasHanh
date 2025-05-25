@@ -66,6 +66,7 @@ h3 {
     border-radius: 5px;
     display: block;
     font-size: 0.9em;
+    background-color: #222;
 }
 
 .nav-links a:hover {
@@ -271,20 +272,20 @@ h3 {
 
 @media screen and (min-width: 500px) {
       .navbar {
-        flex-direction: row; /* Navbar blir horisontell igen */
-        justify-content: space-between; /* Sprid ut logo och nav-länkar */
+        flex-direction: row;
+        justify-content: space-between;
         padding: 1rem 2rem;
     }
     .logo {
         font-size: 1.8rem;
-        margin-bottom: 0; /* Ta bort bottenmarginal för loggan */
+        margin-bottom: 0; 
     }
     .nav-links {
-        flex-direction: row; /* Länkarna blir horisontella igen */
-        width: auto; /* Låt nav-länkarna ta den bredd de behöver */
+        flex-direction: row;
+        width: auto;
     }
     .nav-links li {
-        margin: 0 1rem; /* Horisontellt mellanrum mellan länkar */
+        margin: 0 1rem;
         width: auto;
     }
     .nav-links a {
